@@ -1,43 +1,45 @@
 # NEXIA Switch
 
-**Softswitch Class 4 VoIP autoalojado** — enrutamiento de llamadas mayorista (LCR), admisión SIP, media y facturación, sobre Kamailio + FreeSWITCH + rtpengine, con panel de administración web.
+**Self-hosted Class 4 VoIP softswitch** — wholesale call routing (LCR), SIP
+admission, media, and real-time billing, built on Kamailio + FreeSWITCH +
+rtpengine, with a web administration panel.
 
-> ⚠️ **Software propietario.** Este repositorio es la superficie **oficial de descarga**.
-> El código fuente **no** es público. Puede **descargar e instalar** NEXIA Switch,
-> pero **no está permitido modificarlo, redistribuirlo ni realizar ingeniería inversa**.
-> Consulte la [LICENCIA](LICENSE).
-
----
-
-## Descarga
-
-Las versiones oficiales se publican en la pestaña **[Releases](../../releases)** de este
-repositorio. Cada Release incluye:
-
-- el instalador firmado,
-- las sumas de verificación (SHA-256),
-- las notas de la versión.
-
-> Las Releases son la **única** fuente de distribución soportada. No descargue NEXIA
-> Switch desde ningún otro origen.
-
-## Instalación
-
-> _La primera Release pública se está preparando. Instrucciones detalladas y el
-> instalador descargable aparecerán aquí en cuanto se publique._
-
-Requisitos previos (resumen):
-
-- Servidor Linux dedicado (Debian/Ubuntu recomendado), acceso `root`.
-- IP pública y puertos de telefonía disponibles (SIP/RTP).
-- Una licencia válida emitida para su servidor.
-
-## Soporte y licencias comerciales
-
-Para obtener una licencia, soporte, o permisos de distribución/modificación,
-contacte al titular. Toda modificación o redistribución requiere autorización
-previa y por escrito.
+> ⚠️ **Proprietary software.** This repository is the official **download
+> surface**. The source code is **not** public. You may **download and
+> install** NEXIA Switch, but you may **not modify, redistribute, or reverse
+> engineer it**. See the [LICENSE](LICENSE).
 
 ---
 
-© 2026 NEXIA Switch. Todos los derechos reservados.
+## Download
+
+Official builds are published on the **[Releases](../../releases)** tab of this
+repository. Each Release includes:
+
+- the signed installer,
+- checksums (SHA-256),
+- the release notes.
+
+> Releases are the **only** supported distribution source. Do not download
+> NEXIA Switch from anywhere else.
+
+## Installation
+
+> _The first public Release is being prepared. Detailed instructions and the
+> downloadable installer will appear here once it is published._
+
+Prerequisites (summary):
+
+- A dedicated Linux server (Debian/Ubuntu recommended), `root` access.
+- A public IP and available telephony ports (SIP/RTP).
+- A valid license issued for your server.
+
+## Support and commercial licenses
+
+For licensing, support, or distribution/modification permissions, contact the
+rights holder. Any modification or redistribution requires prior written
+authorization.
+
+---
+
+© 2026 NEXIA Switch. All rights reserved.

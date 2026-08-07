@@ -1,58 +1,56 @@
-NEXIA Switch — Licencia de Uso Propietaria
-Copyright (c) 2026 NEXIA Switch. Todos los derechos reservados.
+NEXIA Switch — Proprietary Use License
+Copyright (c) 2026 NEXIA Switch. All rights reserved.
 
 ============================================================================
-ESTE ES SOFTWARE PROPIETARIO. NO ES SOFTWARE DE CÓDIGO ABIERTO.
+THIS IS PROPRIETARY SOFTWARE. IT IS NOT OPEN SOURCE.
 ============================================================================
 
-1. DEFINICIONES
-   "Software" designa los binarios, instaladores, paquetes, scripts,
-   documentación y cualquier artefacto distribuido a través de este
-   repositorio o de sus Releases.
-   "Licenciante" designa a NEXIA Switch, titular de todos los derechos.
-   "Usted" designa a la persona o entidad que descarga o utiliza el Software.
+1. DEFINITIONS
+   "Software" means the binaries, installers, packages, scripts,
+   documentation, and any artifact distributed through this repository or
+   its Releases.
+   "Licensor" means NEXIA Switch, the holder of all rights.
+   "You" means the person or entity that downloads or uses the Software.
 
-2. CONCESIÓN LIMITADA
-   Sujeto al cumplimiento de esta licencia, el Licenciante le concede un
-   derecho personal, intransferible, no exclusivo y revocable a DESCARGAR
-   e INSTALAR el Software con el fin de EJECUTARLO tal cual se distribuye.
+2. LIMITED GRANT
+   Subject to compliance with this license, the Licensor grants You a
+   personal, non-transferable, non-exclusive, revocable right to DOWNLOAD
+   and INSTALL the Software for the purpose of RUNNING it as distributed.
 
-3. RESTRICCIONES (LO QUE NO ESTÁ PERMITIDO)
-   Salvo autorización previa y por escrito del Licenciante, Usted NO podrá:
-     a) modificar, adaptar, traducir ni crear obras derivadas del Software;
-     b) redistribuir, revender, sublicenciar, alquilar, prestar ni publicar
-        el Software o cualquier parte de él, en original o modificado;
-     c) realizar ingeniería inversa, descompilar o desensamblar el Software,
-        ni intentar derivar su código fuente, salvo en la medida en que la
-        ley aplicable lo permita de forma imperativa;
-     d) eliminar u ocultar avisos de copyright, marcas o de licencia;
-     e) eludir, desactivar o interferir con los mecanismos de licenciamiento,
-        firma o control de acceso del Software.
+3. RESTRICTIONS (WHAT IS NOT PERMITTED)
+   Except with the Licensor's prior written authorization, You may NOT:
+     a) modify, adapt, translate, or create derivative works of the Software;
+     b) redistribute, resell, sublicense, rent, lend, or publish the
+        Software or any part of it, whether original or modified;
+     c) reverse engineer, decompile, or disassemble the Software, or attempt
+        to derive its source code, except to the extent that applicable law
+        expressly and unwaivably permits it;
+     d) remove or obscure any copyright, trademark, or license notices;
+     e) circumvent, disable, or interfere with the Software's licensing,
+        signing, or access-control mechanisms.
 
-4. PROPIEDAD
-   El Software se licencia, no se vende. El Licenciante conserva la
-   titularidad y todos los derechos de propiedad intelectual. Esta licencia
-   no le transfiere ningún derecho sobre el código fuente, que permanece
-   privado y no forma parte de esta distribución.
+4. OWNERSHIP
+   The Software is licensed, not sold. The Licensor retains title and all
+   intellectual property rights. This license transfers no rights in the
+   source code, which remains private and is not part of this distribution.
 
-5. SIN GARANTÍA
-   EL SOFTWARE SE PROPORCIONA "TAL CUAL", SIN GARANTÍA DE NINGÚN TIPO,
-   EXPRESA O IMPLÍCITA, INCLUIDAS SIN LIMITACIÓN LAS GARANTÍAS DE
-   COMERCIABILIDAD, IDONEIDAD PARA UN FIN DETERMINADO Y NO INFRACCIÓN.
+5. NO WARRANTY
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+   OR IMPLIED, INCLUDING WITHOUT LIMITATION THE WARRANTIES OF
+   MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT.
 
-6. LIMITACIÓN DE RESPONSABILIDAD
-   EN NINGÚN CASO EL LICENCIANTE SERÁ RESPONSABLE POR DAÑOS DIRECTOS,
-   INDIRECTOS, INCIDENTALES, ESPECIALES O CONSECUENTES DERIVADOS DEL USO
-   O LA IMPOSIBILIDAD DE USO DEL SOFTWARE.
+6. LIMITATION OF LIABILITY
+   IN NO EVENT SHALL THE LICENSOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+   INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR
+   INABILITY TO USE THE SOFTWARE.
 
-7. TERMINACIÓN
-   Esta licencia se extingue automáticamente si Usted incumple cualquiera
-   de sus términos. Al extinguirse, deberá cesar todo uso y destruir todas
-   las copias del Software en su poder.
+7. TERMINATION
+   This license terminates automatically if You breach any of its terms.
+   Upon termination, You must cease all use and destroy all copies of the
+   Software in your possession.
 
-8. LEGISLACIÓN APLICABLE
-   Esta licencia se rige por la legislación aplicable en la jurisdicción del
-   Licenciante, sin atender a normas de conflicto de leyes.
+8. GOVERNING LAW
+   This license is governed by the laws applicable in the Licensor's
+   jurisdiction, without regard to conflict-of-law rules.
 
-Para licencias comerciales, de distribución o de modificación, contacte al
-Licenciante.
+For commercial, distribution, or modification licenses, contact the Licensor.
