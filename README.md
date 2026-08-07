@@ -25,8 +25,31 @@ repository. Each Release includes:
 
 ## Installation
 
-> _The first public Release is being prepared. Detailed instructions and the
-> downloadable installer will appear here once it is published._
+Download the bootstrap, **read it**, and run it as root. It downloads the
+latest signed release bundle, verifies its Ed25519 signature against a key
+pinned inside the bootstrap itself, and only then installs:
+
+```bash
+curl -fsSLO https://raw.githubusercontent.com/nexiaswitch-ux/Nexia-Switch/main/install.sh
+less install.sh          # read it before you run it — it installs as root
+sudo bash install.sh
+```
+
+> **Do not pipe `curl … | bash`.** The bootstrap is short and written to be
+> read. It never installs anything whose signature does not verify.
+
+Useful options:
+
+```bash
+# Pin a specific version
+sudo NEXIA_VERSION=1.0.0 bash install.sh
+
+# Download and verify only, then inspect before installing
+sudo NEXIA_FETCH_ONLY=1 bash install.sh
+
+# Install with a domain and issue a real TLS certificate automatically
+sudo NEXIA_DOMAIN=voice.example.com NEXIA_ADMIN_EMAIL=admin@example.com bash install.sh
+```
 
 Prerequisites (summary):
 
