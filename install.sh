@@ -101,7 +101,10 @@ mkdir -p "$EXDIR"
 tar -xzf "$TARBALL" -C "$EXDIR" --no-same-owner
 SRC="${EXDIR}/${NAME}"
 [[ -f "${SRC}/installer/install.sh" ]] || die "Verified bundle has an unexpected layout (no installer/install.sh)."
-[[ -f "${SRC}/app/main.py" ]]          || die "Verified bundle has an unexpected layout (no app/main.py)."
+# The application entry point is app/main — source (.py) in a source bundle, or
+# a compiled extension (app/main.*.so) in a Cython-compiled release bundle.
+[[ -f "${SRC}/app/main.py" ]] || compgen -G "${SRC}/app/main.*.so" >/dev/null \
+    || die "Verified bundle has an unexpected layout (no app/main.py or app/main.*.so)."
 ok "Bundle extracted and its layout checked."
 
 if [[ "$NEXIA_FETCH_ONLY" == "1" ]]; then
