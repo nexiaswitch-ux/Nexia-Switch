@@ -90,6 +90,16 @@ done
 # the address is a toll or something that comes back to them. An unexplained
 # prompt gets a fake address typed into it, and a register full of fake
 # addresses is worth less than no register.
+# A machine that already enrolled knows its own address: the first run
+# persists it in /etc/nexia/enrol.email precisely so updates and re-runs
+# never have to ask again (asking broke unattended self-updates: the panel
+# triggers install.sh with no terminal and no NEXIA_EMAIL, and the update
+# died here on servers that were already on record).
+EMAIL_STORE=/etc/nexia/enrol.email
+if [[ -z "$NEXIA_EMAIL" && -s "$EMAIL_STORE" ]]; then
+    NEXIA_EMAIL="$(head -c 254 "$EMAIL_STORE" | tr -d '[:space:]')"
+    info "Using the enrolment address on record (${NEXIA_EMAIL})"
+fi
 if [[ -z "$NEXIA_EMAIL" ]]; then
     if [[ -t 0 ]]; then
         echo
@@ -224,6 +234,12 @@ fi
 #     without cloning anything. All NEXIA_* variables pass through the env.
 info "Starting the installer from the verified bundle…"
 export NEXIA_ENROL_EMAIL="$NEXIA_EMAIL"
+
+# Remember the address for the next run (updates, re-installs) BEFORE the
+# installer takes over: enrolment succeeded, so this is the address on record.
+umask 077
+mkdir -p /etc/nexia
+printf '%s\n' "$NEXIA_EMAIL" > /etc/nexia/enrol.email
 
 # The voucher authorises THIS machine and nothing else. Handed over in a file
 # under /run (tmpfs, root-only, gone at reboot) rather than on a command line,
