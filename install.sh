@@ -44,6 +44,9 @@
 #    less install.sh                 # read it — it installs as root
 #    sudo NEXIA_EMAIL=you@example.com bash install.sh
 #
+#    Without NEXIA_EMAIL it asks, as long as there is a terminal to ask on.
+#    NEXIA_NAME and NEXIA_PHONE are optional and never prompted for.
+#
 #    # Download and verify only, then inspect before running the installer:
 #    sudo NEXIA_EMAIL=you@example.com NEXIA_FETCH_ONLY=1 bash install.sh
 #
@@ -80,14 +83,32 @@ done
 # Asked once, here, because the enrolment record is only worth keeping if it
 # says who. An unattended run must supply NEXIA_EMAIL: prompting a script that
 # nobody is watching would hang forever instead of failing.
+#
+# The prompt explains itself. Someone who read this script before running it as
+# root — which is what it asks them to do — should not then be surprised by a
+# question, and someone who did not read it should not have to guess whether
+# the address is a toll or something that comes back to them. An unexplained
+# prompt gets a fake address typed into it, and a register full of fake
+# addresses is worth less than no register.
 if [[ -z "$NEXIA_EMAIL" ]]; then
     if [[ -t 0 ]]; then
-        read -rp "Email to register this installation: " NEXIA_EMAIL
+        echo
+        echo "  This installation is registered before it begins: the software is"
+        echo "  served from the NEXIA licence server and needs an address on record."
+        echo "  It is the same address your free licence will be sent to."
+        echo
+        read -rp "  Email for this installation: " NEXIA_EMAIL
+        echo
     else
         die "NEXIA_EMAIL is not set and there is no terminal to ask. Re-run with: NEXIA_EMAIL=you@example.com"
     fi
 fi
 [[ "$NEXIA_EMAIL" == *@*.* ]] || die "That does not look like an email address: ${NEXIA_EMAIL}"
+
+# Name and phone are optional and never prompted for. One question at install
+# time is a reasonable price; three is friction at the worst possible moment,
+# and the rest is better collected when the licence is activated — that is when
+# the operator has a reason of their own to give it.
 
 # --- What machine this is ----------------------------------------------------
 # Read before installing anything, so it can only use what a bare server has.
